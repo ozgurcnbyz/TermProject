@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3cc24"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="Note Detail" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Title:"
+            android:textStyle="bold" />
+<View
+     android:layout_width="1dp"
+     android:layout_height="match_parent"
+     android:background="#ababab" />
+        <TextView
+            android:id="@+id/et_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            
+            android:gravity="center"
+            android:hint="Enter title..." />
+    </LinearLayout>
+
+<View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="#ababab" />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Date: "
+            android:textStyle="bold" />
+<View
+     android:layout_width="1dp"
+     android:layout_height="match_parent"
+     android:background="#ababab" />
+        <TextView
+            android:id="@+id/et_date"
+            
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+             
+            android:hint="Date..." />
+    </LinearLayout>
+<View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="#ababab" />
+ 
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Note: "
+            android:textStyle="bold" />
+<View
+     android:layout_width="1dp"
+     android:layout_height="match_parent"
+     android:background="#ababab" />
+        <TextView
+            android:id="@+id/et_note"
+            
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+             
+            android:hint="Note.." />
+    </LinearLayout>
+    <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="#ababab" />
+    
+<View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="#ababab" />
+ <Button
+        android:id="@+id/bt_delete"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        
+        android:text="Delete"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</LinearLayout>

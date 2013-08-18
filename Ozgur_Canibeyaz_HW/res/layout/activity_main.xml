@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:background="#f3cc24"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+             android:textSize="32sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="List of Notes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ll"
+        
+        android:gravity="center_vertical" >
+
+       <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+       
+    </LinearLayout>
+     <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="#ababab" />
+
+    <ScrollView
+        android:id="@+id/sc_scrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginBottom="50dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_addnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1.0"
+            android:text="New" />
+
+        
+    </LinearLayout>
+
+</RelativeLayout>
